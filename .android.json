@@ -1,0 +1,1 @@
+{"package": "ru.randomcoder.ssf", "name": "The secret of sunny forest", "icon_name": "SSF", "version": "1.2", "numeric_version": 1, "orientation": "sensor", "permissions": ["VIBRATE", "INTERNET"], "include_pil": false, "include_sqlite": false, "layout": null, "source": false, "expansion": false, "store": "play", "update_icons": true, "update_always": false, "heap_size": "3"}
