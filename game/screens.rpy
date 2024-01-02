@@ -136,7 +136,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=0.1)
 
 style namebox:
     xpos gui.name_xpos
@@ -196,17 +196,100 @@ style input:
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
 
+screen lose_game():
+    style_prefix "lose_game"
+    modal True
+    vbox:
+        textbutton "Играть снова" action Jump('start')
+        textbutton "Загрузить автосохранение" action QuickLoad()             
+        textbutton "Загрузить игру" action ShowMenu('load')
+        textbutton "Выход" action Quit()
 
-## Экран выбора ################################################################
-##
-## Этот экран используется, чтобы показывать внутриигровые выборы,
-## представленные оператором menu. Один параметр, вложения, список объектов,
-## каждый с заголовком и полями действия.
-##
-## https://www.renpy.org/doc/html/screen_special.html#choice
+style lose_game_vbox is vbox
+style lose_game_button is button
+style lose_game_button_text is button_text
+
+style lose_game_vbox:
+    xalign 0.5
+    ypos 405
+    yanchor 0.5
+
+    spacing gui.choice_spacing
+
+style lose_game_button is default:
+    properties gui.button_properties("choice_button")
+
+style lose_game_button_text is default:
+    properties gui.button_text_properties("choice_button")
+
+
+screen characteristics_maxi():
+    tag characteristics_panel
+    style_prefix "maxi"
+    frame:
+        xalign 1.0 yalign 0.0
+        button:
+            action Show("characteristics_mini")
+            grid 4 2:
+
+                text f"{{image={h.life.image}}} "
+                text f"{{image={h.mind.image}}} "
+                text f"{{image={h.kind.image}}} "
+                text f"{{image={h.money.image}}} "
+                
+                # imagebutton:
+                #     idle "ups.png" 
+                #     hover "ups.png"
+                #     action Show("characteristics_mini")
+                    
+                text f"{h.life.value} " xalign 0.5
+                text f"{h.mind.value} " xalign 0.5
+                text f"{h.kind.value} " xalign 0.5
+                text f"{h.money.value} " xalign 0.5
+
+                # text ""
+
+style maxi_frame:
+    # background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
+    #background "#006"
+    insensitive_background "#2b2b2b72"
+    #hover_background "#00a"
+
+screen characteristics_mini():
+    tag characteristics_panel
+    style_prefix "mini"
+    frame:
+        xalign 1.0 yalign 0.0
+        vbox:
+            imagebutton:
+                idle "up.png" 
+                hover "ups.png"
+                action Show("characteristics_maxi")
+
+style mini_frame:
+    # background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
+    # background "#006"
+    insensitive_background "#25252583"
+    # hover_background "#00a"
+
+screen timerz:
+    timer 0.05 repeat True action If(timez>0, SetVariable('timez', timez-0.05), Jump(marker))
+    bar:
+        value timez 
+        range time_range 
+        yalign 0.15
+        xalign .5 
+        xmaximum 300
+        left_bar Frame("gui/bar_full.png", 0, 0)
+        hover_left_bar Frame("gui/bar_empty.png", 0, 0)
+        right_bar Frame("gui/bar_hover.png", 0, 0)
+        # thumb "gui/thumb.png"
 
 screen choice(items):
     style_prefix "choice"
+
+    if is_use_timer:
+        use timerz
 
     vbox:
         for i in items:
@@ -249,10 +332,11 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Назад") action Rollback()
-            textbutton _("История") action ShowMenu('history')
-            textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Авто") action Preference("auto-forward", "toggle")
+            if DEBUG:
+                textbutton _("Назад") action Rollback()
+                textbutton _("История") action ShowMenu('history')
+                textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
+                textbutton _("Авто") action Preference("auto-forward", "toggle")
             textbutton _("Сохранить") action ShowMenu('save')
             textbutton _("Б.Сохр") action QuickSave()
             textbutton _("Б.Загр") action QuickLoad()
@@ -559,7 +643,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Сделано с помощью {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("{a=https://www.renpy.org/}{/a}\n\n[renpy.license!t]")
 
 
 style about_label is gui_label
@@ -1249,18 +1333,10 @@ screen notify(message):
     style_prefix "notify"
 
     frame at notify_appear:
-        text "[message!tq]"
+        text "[message]"
+        #text "[message!tq]"
 
     timer 3.25 action Hide('notify')
-
-
-transform notify_appear:
-    on show:
-        alpha 0
-        linear .25 alpha 1.0
-    on hide:
-        linear .5 alpha 0.0
-
 
 style notify_frame is empty
 style notify_text is gui_text
@@ -1273,6 +1349,42 @@ style notify_frame:
 
 style notify_text:
     properties gui.text_properties("notify")
+
+
+screen rnotify(message):
+    # Уведомления про отношения
+
+    zorder 100
+    style_prefix "rnotify"
+
+    frame at notify_appear:
+        text "[message]"
+        #text "[message!tq]"
+
+    timer 3.25 action Hide('rnotify')
+
+style rnotify_frame is empty
+style rnotify_text is gui_text
+
+style rnotify_frame:
+    ypos gui.notify_ypos
+    xalign 0.5
+
+    background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
+    padding gui.notify_frame_borders.padding
+
+style rnotify_text:
+    properties gui.text_properties("notify")
+
+transform notify_appear:
+    on show:
+        alpha 0
+        linear .25 alpha 1.0
+    on hide:
+        linear .5 alpha 0.0
+
+
+
 
 
 ## Экран NVL ###################################################################

@@ -11,7 +11,8 @@ label end_story:
       hide  polly st swimsuit right at right
       hide darina st swimsuit at left
       hide popka at center 
-      show bg autors
+      #show bg autors
+      show bg fon mistake
       play music going
       menu:
             "Конец 1-ой части":

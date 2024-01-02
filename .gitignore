@@ -134,6 +134,12 @@ cache/
 gui/
 images/
 saves/
+errors.txt
+log.txt
+traceback.txt
+*.rpyc
+sandbox/
+game/tl/None/common.rpymc
 
 # vscode files
 .vscode/

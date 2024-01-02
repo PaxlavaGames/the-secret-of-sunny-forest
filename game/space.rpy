@@ -16,6 +16,14 @@ label space:
     play sound yey
     p "Восхитительно!"
     d "Если, что падать будет очень далеко..."
+    p "Могу привязать тебя веревкой, что бы ты не упала"
+    show darina surprise at left
+    d "Что за фантазии тебя посещают?"
+    d "У нас и веревки нет, совьешь ее из своих прекрасных волос или листьев деревьев?"
+    show darina smile at left
+    p "На такую высокую гору моих волос точно не хватит, так что возьму еще и твои не менее прекрасные волосы"
+    d "На мои волосы у меня другие планы, им еще расти и расти до твоих"
+    d "Солнце уже приближается к закату"
 
     hide polly smile right at right
 
@@ -36,6 +44,7 @@ label space:
             "На склоне":
                 $ is_made_error = True
                 play sound fail
+                $ travel_skills_good= False
                 "Вы скатитесь с горы в море"
                 $ h.change(life=-1)
                 scene bg top
@@ -43,6 +52,8 @@ label space:
             "На ровном месте":
                 if not is_made_error:
                     $ h.change(mind=1, money=1)
+                    $ travel_skills_good= True
+                    "Ваши туристические навыки улучшились"
                 else:
                     $ h.change(money=1)
                 play sound success
@@ -51,14 +62,16 @@ label space:
             "У муравейника":
                 $ is_made_error = True
                 play sound fail
-                "Ночью вам будет не до сна"
+                "Ночью вам будет не до сна, по вам будут бегать маленькие кусачие гости"
+                $ travel_skills_good= False
                 $ h.change(life=-1)
                 scene bg top
                 jump where_tent
             "На тропах лесных зверей":
                 $ is_made_error = True
                 play sound fail
-                "Ночью вам будет не до сна"
+                "Ночью вам будет не до сна, рядом с вами будут бегать большие кусачие гости"
+                $ travel_skills_good= False
                 $ h.change(life=-1)
                 scene bg top
                 jump where_tent

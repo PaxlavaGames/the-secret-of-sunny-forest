@@ -487,7 +487,7 @@ translate None strings:
 
     # renpy/common/00library.rpy:297
     old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
-    new "Привет всем! Игра 'Секрет солнечного леса' начинается как путешествие двух девушек-студенток в теплые морские края. Девушки преодолевают препятствия, встречают друзей и врагов. Вы проживаете приключения вместе с Полиной и Дариной. Это пробная версия игры. Да пребудет с нами сила!"
+    new "Добро пожаловать! Игра 'Тайна солнечного леса' начинается как путешествие двух девушек - студенток в теплые края. Девушки преодолевают препятствия, встречают друзей и врагов. Вы проживаете приключения вместе с ними. Это пробная версия игры. Да пребудет с нами сила!"
 
     # renpy/common/00preferences.rpy:259
     old "display"
