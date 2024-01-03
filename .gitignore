@@ -129,15 +129,13 @@ dmypy.json
 .pyre/
 
 # Renpy files
-audio/
-cache/
-gui/
-images/
 saves/
 errors.txt
 log.txt
 traceback.txt
-*.rpyc
+game/*.rpyc
+game/cache
+progressive_download.txt
 sandbox/
 game/tl/None/common.rpymc
 
