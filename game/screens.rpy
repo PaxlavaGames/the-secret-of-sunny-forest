@@ -819,6 +819,25 @@ screen preferences():
 
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.
+#begin language_picker
+
+                vbox:
+                    style_prefix "radio"
+                    label _("Язык")
+
+                    textbutton "Русский" text_font "DejaVuSans.ttf" action Language(None)
+                    textbutton "English" text_font "DejaVuSans.ttf" action Language("english")
+                # vbox:
+                #     style_prefix "radio"
+                #     label _(" ")
+
+                #     textbutton "Українська" text_font "DejaVuSans.ttf" action Language("ukrainian")
+                #     textbutton "日本語" text_font "SourceHanSansLite.ttf" action Language("japanese")
+                #     textbutton "한국어" text_font "SourceHanSansLite.ttf" action Language("korean")
+                #     textbutton "简体中文" text_font "SourceHanSansLite.ttf" action Language("schinese")
+                #     textbutton "繁體中文" text_font "SourceHanSansLite.ttf" action Language("tchinese")
+
+#end language_picker
 
             null height (4 * gui.pref_spacing)
 
