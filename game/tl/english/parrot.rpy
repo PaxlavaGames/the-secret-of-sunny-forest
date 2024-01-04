@@ -484,3 +484,15 @@ translate english strings:
     old "Оказывается, что сложно жить не только в нашем мире"
     new ""
 
+# TODO: Translation updated at 2024-01-04 13:36
+
+translate english strings:
+
+    # game/parrot.rpy:137
+    old "Виря"
+    new "Виря"
+
+    # game/parrot.rpy:139
+    old "Мое имя звучит на вашем языке, как..."
+    new "Мое имя звучит на вашем языке, как..."
+

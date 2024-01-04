@@ -46,5 +46,19 @@ translate english bus_5ef9c55e:
 translate english bus_a83aa255:
 
     # d "...пока будем преодолевать несколько километров вдоль каменистого побережья с рюкзаком..."
-    d "...while we'll be covering several kilometers along the rocky coast with a backpack..."
-# TODO: Translation updated at 2024-01-03 15:34
+    d "...while we'll be covering several kilometers along the rocky coast with a backpack..."# TODO: Translation updated at 2024-01-04 13:19
+
+translate english strings:
+
+    # game/bus.rpy:6
+    old "Лиза"
+    new "Lizabeth"
+
+# TODO: Translation updated at 2024-01-04 13:36
+
+translate english strings:
+
+    # game/bus.rpy:8
+    old "Как меня будут звать?"
+    new "What is my name?"
+

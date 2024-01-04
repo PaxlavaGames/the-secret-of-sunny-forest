@@ -51,3 +51,23 @@ translate english strings:
     # game/end_story.rpy:43
     old "Играть снова"
     new "Play again"
+# TODO: Translation updated at 2024-01-04 13:36
+
+# game/end_story.rpy:24
+translate english credits_38ef4f3c:
+
+    # "{color=#dcc600}Дизайн{/color}, {color=#00d3eb}Дизайн игры{/color}, {color=#00ff00}Дизайн сюжета{/color} - {b}Полина{/b}"
+    "{color=#dcc600}Дизайн{/color}, {color=#00d3eb}Дизайн игры{/color}, {color=#00ff00}Дизайн сюжета{/color} - {b}Полина{/b}"
+
+# game/end_story.rpy:27
+translate english credits_c5bcde7c:
+
+    # "{color=#ff00ff}Разработка{/color}, {color=#00f7ff}Звук{/color} - {b}Леван Ломидзе (QuillCraftsman){/b}"
+    "{color=#ff00ff}Разработка{/color}, {color=#00f7ff}Звук{/color} - {b}Леван Ломидзе (QuillCraftsman){/b}"
+
+# game/end_story.rpy:36
+translate english credits_82f5df39:
+
+    # "Производство {b}{color=#00f7ff}PaxlavaGames{/color}{/b}"
+    "Производство {b}{color=#00f7ff}PaxlavaGames{/color}{/b}"
+

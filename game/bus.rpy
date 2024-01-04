@@ -3,9 +3,9 @@ label bus:
 
     show polly smile right at right
 
-    $ PLAYER_DEFAULT_NAME = "Лиза"
+    $ PLAYER_DEFAULT_NAME = _("Лиза")
 
-    $ player_name = renpy.input("Как меня будут звать?", default=PLAYER_DEFAULT_NAME, allow="йцукенгшщзхъфывапролджэячсмитьбю-ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮQWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm")
+    $ player_name = renpy.input(_("Как меня будут звать?"), default=PLAYER_DEFAULT_NAME, allow="йцукенгшщзхъфывапролджэячсмитьбю-ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮQWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm")
     $ player_name = player_name.strip()
 
     if player_name == "":
