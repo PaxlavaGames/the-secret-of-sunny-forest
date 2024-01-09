@@ -1,4 +1,4 @@
-# the-secret-of-sunny-forest
+# The Secret of Sunny Forest
 
 ![The secret of sunny forest logo](ssf_preview_1280_640.png)
 
