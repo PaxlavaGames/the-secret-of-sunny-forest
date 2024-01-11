@@ -142,3 +142,15 @@ translate english strings:
     old "А палатку ночью сама будешь ставить?"
     new "Will you pitch the tent yourself at nigth?"
 
+# TODO: Translation updated at 2024-01-11 12:29
+
+translate english strings:
+
+    # game/sea.rpy:41
+    old "Ничего они не полезные! А медузы мезко-слизкие"
+    new "They are not useful at all! And jellyfish are slimy and slimy"
+
+    # game/sea.rpy:43
+    old "Да, водоросли вкусные и я пробывала маски на их основе - кожа потом просто супер!"
+    new "Yes, algae is delicious and I’ve tried masks based on it - my skin is just super!"
+

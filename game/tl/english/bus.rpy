@@ -16,7 +16,7 @@ translate english bus_f03a11b9:
 translate english bus_9a80a966:
 
     # "Дарина была рада, что она смогла уделить время отдыху. Девушка не только училась, но и подрабатывала рисованием портретов. Мечтала стать более обеспеченной, что бы рисовать то, что требует ее душа "
-    "Darina was glad that she could devote time to rest. The girl not only studied but also earned money by drawing portraits. She dreamed of becoming more prosperous to draw what her soul demanded"
+    "Marilyne was glad that she could devote time to rest. The girl not only studied but also earned money by drawing portraits. She dreamed of becoming more prosperous to draw what her soul demanded"
 
 # game/bus.rpy:34
 translate english bus_41fd18f2:
@@ -46,7 +46,7 @@ translate english bus_5ef9c55e:
 translate english bus_a83aa255:
 
     # d "...пока будем преодолевать несколько километров вдоль каменистого побережья с рюкзаком..."
-    d "...while we'll be covering several kilometers along the rocky coast with a backpack..."# TODO: Translation updated at 2024-01-04 13:19
+    d "...while we'll be covering several kilometers along the rocky coast with a backpack..."
 
 translate english strings:
 

@@ -333,3 +333,15 @@ translate english strings:
     old "Язык"
     new "Language"
 
+# TODO: Translation updated at 2024-01-11 12:46
+
+translate english strings:
+
+    # game/screens.rpy:204
+    old "Загрузить автосохранение"
+    new "Load autosave"
+
+    # game/screens.rpy:205
+    old "Загрузить игру"
+    new "Load game"
+

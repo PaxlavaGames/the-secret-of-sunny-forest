@@ -42,7 +42,11 @@ translate english strings:
     old "Уже почти добрели. Видишь веревку, которая свисает с горы? Нам как раз туда"
     new "We are almost there. Do you see the rope which hang down from the hill? We are goint there."
 
+# TODO: Translation updated at 2024-01-11 12:23
+
+translate english strings:
+
     # game/rope.rpy:10
-    old "Даринка, представь, что мы бывалые 'cкитальцы', и дальние дороги - это вся наша жизнь"
+    old "Даринка, представь, что мы бывалые cкитальцы, и дальние дороги - это вся наша жизнь"
     new "Marilyne, imagine that we are experiensed travelers and our whole life is the roads"
 

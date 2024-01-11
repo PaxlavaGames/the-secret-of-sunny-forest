@@ -610,7 +610,7 @@ translate english strings:
 
     # game/tent.rpy:155
     old "Привет, я [player_name], а это Дарина"
-    new "Hello, my name is [palyer_name], this is Marilyne"
+    new "Hello, my name is [player_name], this is Marilyne"
 
     # game/tent.rpy:155
     old "А мы с незнакомцами не говорим"
@@ -659,4 +659,32 @@ translate english strings:
     # game/tent.rpy:308
     old "{image=papaya.png}"
     new "{image=papaya.png}"
+
+# TODO: Translation updated at 2024-01-11 12:39
+
+translate english strings:
+
+    # game/tent.rpy:122
+    old "Зачем я с тобой вообще поехала?!"
+    new "Why did I even go with you?!"
+
+    # game/tent.rpy:129
+    old "Сделаешь мне массаж?"
+    new "Will you give me a massage?"
+
+    # game/tent.rpy:134
+    old "Угу"
+    new "Okay"
+
+    # game/tent.rpy:273
+    old "Да, через 30 минут догоню вас"
+    new "Yes, I'll catch up with you in 30 minutes"
+
+    # game/tent.rpy:275
+    old "У меня есть дела поважнее, чем с вами купаться!"
+    new "I have more important things to do than swim with you!"
+
+    # game/tent.rpy:277
+    old "Нет, не пойду, сейчас солнце сильно греет"
+    new "No, I won’t go, now the sun is very hot"
 

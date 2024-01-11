@@ -200,10 +200,10 @@ screen lose_game():
     style_prefix "lose_game"
     modal True
     vbox:
-        textbutton "Играть снова" action Jump('start')
-        textbutton "Загрузить автосохранение" action QuickLoad()             
-        textbutton "Загрузить игру" action ShowMenu('load')
-        textbutton "Выход" action Quit()
+        textbutton _("Играть снова") action Jump('start')
+        textbutton _("Загрузить автосохранение") action QuickLoad()             
+        textbutton _("Загрузить игру") action ShowMenu('load')
+        textbutton _("Выход") action Quit()
 
 style lose_game_vbox is vbox
 style lose_game_button is button

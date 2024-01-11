@@ -46,7 +46,7 @@ translate english rock_b465f450:
 translate english rock_3aa30b99:
 
     # "Вдруг, [player_name] увидела большой камень"
-    "Suddenly, [play_name] see the big stone"
+    "Suddenly, [player_name] see the big stone"
 
 # game/rock.rpy:32
 translate english stone_6ac8e8d5:
@@ -64,13 +64,13 @@ translate english stone_6af5dce4:
 translate english stone_f07c3ef9:
 
     # "[player_name] подвернула ногу"
-    "[palyer_name] sprained foot"
+    "[player_name] sprained foot"
 
 # game/rock.rpy:54
 translate english stone_f122c556:
 
     # "[player_name] ушибла бок"
-    "[palyer_name] hurt her side"
+    "[player_name] hurt her side"
 
 # game/rock.rpy:61
 translate english stone_no_choice_25ab527b:
