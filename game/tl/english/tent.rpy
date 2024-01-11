@@ -394,269 +394,269 @@ translate english later_aaa20772:
 translate english later_ce99d7d3:
 
     # "Кирилл посмотрел на хамелеона и вздрогнул"
-    ""
+    "Bill look on the chamelion and flinch"
 
 # game/tent.rpy:213
 translate english later_3666f6b3:
 
     # k "Нет, не знаю, чей он"
-    k ""
+    k "No, I don't know whoes it is"
 
 # game/tent.rpy:220
 translate english later_ee8145c5:
 
     # p "Кирилл, видел на тропинке хамелеона?"
-    p ""
+    p "Bill, did you see the chameleon on the trail?"
 
 # game/tent.rpy:226
 translate english later_6619a2de:
 
     # k "Нет, не видел ни хамелеона, ни его хозяев"
-    k ""
+    k "No, I didn't see the chameleon and his owners"
 
 # game/tent.rpy:237
 translate english later_814769c7:
 
     # "Лицо Кирилла, как будто, на секунду застыло, и он чем-то задумался"
-    ""
+    "Kirill’s face seemed to freeze for a second, and he was thinking about something"
 
 # game/tent.rpy:243
 translate english later_5ba44ff3:
 
     # k "Так, я и выложил вам все мои секреты"
-    k ""
+    k "So, I won't reveal my secrets"
 
 # game/tent.rpy:244
 translate english later_6d9a1331:
 
     # d "Все тайное рано или поздно становится явным..."
-    d ""
+    d "Everything secret sooner or later becomes clear..."
 
 # game/tent.rpy:245
 translate english later_7a40059e:
 
     # p "Ладно, мы же пошутили, не будь букой"
-    p ""
+    p "Don't worry, we are just joking, don't be weired"
 
 # game/tent.rpy:246
 translate english later_7b33b782:
 
     # k "Ок, прощаю вам ваши инсинуации в мой адрес. Я сегодня великодушный"
-    k ""
+    k "OK, I forgive you for your insinuations towards me. I'm generous today"
 
 # game/tent.rpy:249
 translate english later_74f9ecb0:
 
     # k "И то и другое"
-    k ""
+    k "Both"
 
 # game/tent.rpy:250
 translate english later_a891a81c:
 
     # p "Как интересно! Расскажешь подробности?"
-    p ""
+    p "So interesting! Will you tell details?"
 
 # game/tent.rpy:251
 translate english later_80e73f10:
 
     # d "А ты здесь один или с друзьями или подругой?"
-    d ""
+    d "Are you alone or with your friend or girlfriend?"
 
 # game/tent.rpy:252
 translate english later_fb7bae7c:
 
     # k "Сколько вопросов! Я один, и у меня здесь важное дело, связанное с моей семьей, подробности пока и сам не все знаю"
-    k ""
+    k "So many questions! I am alone. I have an important matter. This matter connect to my family. I don't know whole details"
 
 # game/tent.rpy:254
 translate english later_f6beafcf:
 
     # k "А вы надолго приехали?" nointeract
-    k "" nointeract
+    k "How long will you stay here?" nointeract
 
 # game/tent.rpy:256
 translate english later_cd39a08e:
 
     # p "Так, что мы будем отдыхать и купаться сколько захотим"
-    p ""
+    p "So, we will relax and swim as much as we want"
 
 # game/tent.rpy:258
 translate english later_a735b51e:
 
     # p "Вдруг, нам здесь не понравится"
-    p ""
+    p "Maybe we will not like this place"
 
 # game/tent.rpy:259
 translate english later_ea02de70:
 
     # d "А мне уже тут нравится"
-    d ""
+    d "I have already liked this place"
 
 # game/tent.rpy:260
 translate english later_63238aea:
 
     # p "Ты еще недавно жаловалась, что устала"
-    p ""
+    p "Just recently you complained that you were tired"
 
 # game/tent.rpy:261
 translate english later_81fcfe99:
 
     # d "Уже отдохнула"
-    d ""
+    d "I already rested"
 
 # game/tent.rpy:271
 translate english later_be707908:
 
     # "Пойдем купаться, [player_name], Кирилл?"
-    ""
+    "Will you go to swim, [player_name]? Bill?"
 
 # game/tent.rpy:279
 translate english later_e1afa91b:
 
     # k "Ладно, тогда позже увидимся"
-    k ""
+    k "Okay, I will see you soon then"
 
 # game/tent.rpy:280
 translate english later_ed773e3d:
 
     # "Кирилл уходит плавной походкой, как будто на поляне нет не ни кустов, ни камней"
-    ""
+    "Kirill walks away with a smooth gait, as if there were no bushes or stones in the meadow"
 
 # game/tent.rpy:292
 translate english later_e8d9588f:
 
     # "Девочки делают небольшую площадку для хамелеона и спускаются к морю"
-    ""
+    "The girls make a small playground for the chameleon and go down to the sea"
 
 # game/tent.rpy:294
 translate english later_08d3bdff:
 
     # "Девочки спускаются к морю"
-    ""
+    "The girls go down to the sea"
 
 # game/tent.rpy:299
 translate english later_fdb2a927:
 
     # p "Давай немного перекусим, поиграем с хамелеоном, а потом пойдем купаться"
-    p ""
+    p "Let's have a little snack, play with the chameleon, and then go for a swim"
 
 # game/tent.rpy:301
 translate english later_e3cc2e1e:
 
     # "Давай немного перекусим, а потом пойдем купаться"
-    ""
+    "Let's have a little snack and then go for a swim"
 
 # game/tent.rpy:311
 translate english tent_eating_ad9b0ddd:
 
     # "Спелый банан"
-    ""
+    "Ripe banana"
 
 # game/tent.rpy:314
 translate english tent_eating_bcc557d4:
 
     # p "Как же здесь красиво и приятно находится!"
-    p ""
+    p "How beautiful and pleasant it is to be here!"
 
 # game/tent.rpy:317
 translate english tent_eating_88f57084:
 
     # "свежий авокадо"
-    ""
+    "fresh avocado"
 
 # game/tent.rpy:320
 translate english tent_eating_438eeccf:
 
     # p "Чувствую, что готова поразмыслить над смыслом бытия"
-    p ""
+    p "I feel like I'm ready to think about the meaning of life"
 
 # game/tent.rpy:323
 translate english tent_eating_dd8fe332:
 
     # "Ароматная папайя"
-    ""
+    "Fragrant papaya"
 
 # game/tent.rpy:326
 translate english tent_eating_27b383a4:
 
     # p "Чувствую, что готова на подвиги"
-    p ""
+    p "I feel like I'm ready for great feats"
 
 translate english strings:
 
     # game/tent.rpy:22
     old "Посидим у костра и поиграем на варгане {image=vargan.png}"
-    new ""
+    new "Let's sit by the fire and play the jew's harp {image=vargan.png}"
 
     # game/tent.rpy:22
     old "Приготовить покушать (1 {image=[KIND_IMG_MENU]})"
-    new ""
+    new "Prepare a meal (1 {image=[KIND_IMG_MENU]})"
 
     # game/tent.rpy:22
     old "Разложить вещи в палатке (1 {image=[MIND_IMG_MENU]})"
-    new ""
+    new "Lay things out in the tent (1 {image=[MIND_IMG_MENU]})"
 
     # game/tent.rpy:22
     old "Принести воду (1 {image=[MONEY_IMG_MENU]})"
-    new ""
+    new "Bring water (1 {image=[MONEY_IMG_MENU]})"
 
     # game/tent.rpy:114
     old "И, что предлагаешь, весь день в палатке провести?"
-    new ""
+    new "And what do you suggest, spending the whole day in a tent?"
 
     # game/tent.rpy:114
     old "Это нормально после долгого пути, потерпи, скоро пройдет"
-    new ""
+    new "This is normal after a long journey, be patient, it will pass soon"
 
     # game/tent.rpy:155
     old "Привет, я [player_name], а это Дарина"
-    new ""
+    new "Hello, my name is [palyer_name], this is Marilyne"
 
     # game/tent.rpy:155
     old "А мы с незнакомцами не говорим"
-    new ""
+    new "We aren't speak with strangers"
 
     # game/tent.rpy:239
     old "Девочки смотрят на Кирилла и видят, что с ним что-то не так"
-    new ""
+    new "The girls look at Bill and see that something is wrong with him"
 
     # game/tent.rpy:239
     old "Какой-то ты подозрительный, Кирилл, что ты скрываешь?"
-    new ""
+    new "You’re kind of suspicious, Bill, what are you hiding?"
 
     # game/tent.rpy:239
     old "Отдыхаешь или работаешь здесь, Кирилл?"
-    new ""
+    new "Bill, are you relaxing or working here"
 
     # game/tent.rpy:253
     old "Как получится, каникулы до сентября"
-    new ""
+    new "How will it turn out, our holidays until September"
 
     # game/tent.rpy:253
     old "Пока не знаем"
-    new ""
+    new "We don't know yet"
 
     # game/tent.rpy:285
     old "Пойти купаться"
-    new ""
+    new "Go to swim"
 
     # game/tent.rpy:285
     old "Остаться на поляне"
-    new ""
+    new "Stay on the meadow"
 
     # game/tent.rpy:308
     old "Что вы хотите съесть?"
-    new ""
+    new "What are you want to eat?"
 
     # game/tent.rpy:308
     old "{image=banana.png}"
-    new ""
+    new "{image=banana.png}"
 
     # game/tent.rpy:308
     old "{image=avocado.png}"
-    new ""
+    new "{image=avocado.png}"
 
     # game/tent.rpy:308
     old "{image=papaya.png}"
-    new ""
+    new "{image=papaya.png}"
 
