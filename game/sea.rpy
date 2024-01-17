@@ -38,9 +38,9 @@ label sea:
             # $ renpy.notify(darina_relationship)
             if dr.level == BAD:
                 # d "Нифига они не полезные"
-                $ say_emotionally(dr, "Ничего они не полезные! А медузы мезко-слизкие")
+                $ say_emotionally(dr, _("Ничего они не полезные! А медузы мезко-слизкие"))
             else:
-                $ say_emotionally(dr, "Да, водоросли вкусные и я пробывала маски на их основе - кожа потом просто супер!")
+                $ say_emotionally(dr, _("Да, водоросли вкусные и я пробывала маски на их основе - кожа потом просто супер!"))
             # отн к Д +
 
     hide darina surprise swimsuit right at right

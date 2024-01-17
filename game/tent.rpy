@@ -119,19 +119,19 @@ label tent:
             $ dr.up()
 
     if dr.level == BAD:
-        $ say_emotionally(dr, "Зачем я с тобой вообще поехала?!")
+        $ say_emotionally(dr, _("Зачем я с тобой вообще поехала?!"))
         show darina evil at center
         p "Затем, что ты хотела  попробовать как жить без удобств!"
         show polly evil right at right
         show darina dissatisfied at center
         show polly dissatisfied right at right
     elif dr.level == GOOD:
-        $ say_emotionally(dr, "Сделаешь мне массаж?")
+        $ say_emotionally(dr, _("Сделаешь мне массаж?"))
         p "Конечно, давай, ложись"
         show darina smile at left
         with Fade(1,1,1)
     else:
-        $ say_emotionally(dr, "Угу")
+        $ say_emotionally(dr, _("Угу"))
 
     p "Дарина, кто - то ходит рядом, интересно кто, пойдем посмотрим"
     
@@ -270,11 +270,11 @@ label tent:
     
     "Пойдем купаться, [player_name], Кирилл?"
     if kr.level == GOOD:
-        $ say_emotionally(kr, "Да, через 30 минут догоню вас")  
+        $ say_emotionally(kr, _("Да, через 30 минут догоню вас"))  
     elif kr.level == BAD:
-        $ say_emotionally(kr, "У меня есть дела поважнее, чем с вами купаться!")
+        $ say_emotionally(kr, _("У меня есть дела поважнее, чем с вами купаться!"))
     else:
-        $ say_emotionally(kr, "Нет, не пойду, сейчас солнце сильно греет")
+        $ say_emotionally(kr, _("Нет, не пойду, сейчас солнце сильно греет"))
      
     k "Ладно, тогда позже увидимся"
     "Кирилл уходит плавной походкой, как будто на поляне нет не ни кустов, ни камней"

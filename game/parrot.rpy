@@ -134,9 +134,9 @@ label parrot:
 
     "Попугайчик, пошатываясь, встал на ноги"
     p "О, попугайчику стало лучше! Мы помогли ему!"
-    $ PARROT_DEFAULT_NAME = "Виря"
+    $ PARROT_DEFAULT_NAME = _("Виря")
 
-    $ parrot_name = renpy.input ("Мое имя звучит на вашем языке, как...", default=PARROT_DEFAULT_NAME, allow="йцукенгшщзхъфывапролджэячсмитьбю-ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮQWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm")
+    $ parrot_name = renpy.input (_("Мое имя звучит на вашем языке, как..."), default=PARROT_DEFAULT_NAME, allow="йцукенгшщзхъфывапролджэячсмитьбю-ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮQWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm")
     
     $ parrot_name = parrot_name.strip()
 

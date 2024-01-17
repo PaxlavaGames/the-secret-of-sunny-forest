@@ -1,10 +1,10 @@
 ﻿# Вы можете расположить сценарий своей игры в этом файле.
 
 # Определение персонажей игры.
-define d = Character('Дарина',  who_bold=True, color="#ffdbeb")
+define d = Character(_('Дарина'),  who_bold=True, color="#ffdbeb")
 define p = Character("[player_name]", who_bold=True, color="#feffbe") 
-define n = Character('Незнакомец', color='#ffffff')
-define k = Character('Кирилл', who_bold=True, color='#e7ddff')
+define n = Character(_('Незнакомец'), color='#ffffff')
+define k = Character(_('Кирилл'), who_bold=True, color='#e7ddff')
 define v = Character('[parrot_name]', who_bold=True, color='#c9ffd9')
 
 #define v = Character('[parrot_name]', who_bold=True, color='#b40000')
@@ -166,10 +166,10 @@ init python:
 
         def __init__(self, character=None, life=MAX_LIFE, mind=0, kind=0, money=0):
             self.character=character
-            self.life = Characteristic('life', 'жизнь', life, max_value=MAX_LIFE, min_value=0, image=LIFE_IMG)
-            self.mind = Characteristic('mind', 'ум', mind, min_value=0, image=MIND_IMG)
-            self.kind = Characteristic('kind', 'доброта', kind, min_value=0, image=KIND_IMG)
-            self.money = Characteristic('money', 'монета', money, min_value=0, image=MONEY_IMG)
+            self.life = Characteristic('life', _('жизнь'), life, max_value=MAX_LIFE, min_value=0, image=LIFE_IMG)
+            self.mind = Characteristic('mind', _('ум'), mind, min_value=0, image=MIND_IMG)
+            self.kind = Characteristic('kind', _('доброта'), kind, min_value=0, image=KIND_IMG)
+            self.money = Characteristic('money', _('монета'), money, min_value=0, image=MONEY_IMG)
             self.observers = []
 
         def get(self, name):
@@ -208,7 +208,7 @@ init python:
                     # Было изменение но характеристика не поменялась (она может достигнуть максимума или минимума)
                     # Если достигнуто максимальное значение
                     if new_characteristic.value == new_characteristic.max_value:
-                        messages.append(f'у вас уже максимум {new_characteristic.description} {{image={new_characteristic.image}}}')
+                        messages.append(f'{_("у вас уже максимум")} {new_characteristic.description} {{image={new_characteristic.image}}}')
             result_message = '\n'.join(messages)
             renpy.notify(result_message)
 
@@ -232,17 +232,19 @@ init python:
         def react(self, old, new):
             if new.level != old.level:
                 # изменился статус
-                message = f'Отношения с {new.person} изменились {{image={relationship_imgs[new.level]}}}'
+                message = f'{_("Отношения")} с {new.person} {_("изменились")} {{image={relationship_imgs[new.level]}}}'
             else:
+                BECAME_BETTER = _('лучше')
+                BECAME_WORSE = _('хуже')
                 rel_diff = new.value - old.value
                 if rel_diff == 0:
                     if new.value > 0:
-                        sign = 'лучше'
+                        sign = BECAME_BETTER
                     else:
-                        sign = 'хуже'
+                        sign = BECAME_WORSE
                 else:
-                    sign = 'лучше' if rel_diff > 0 else 'хуже'
-                message = f'Отношения с {new.person} стали {sign}'
+                    sign = BECAME_BETTER if rel_diff > 0 else BECAME_WORSE
+                message = f'{_("Отношения с")} {new.person} {_("стали")} {sign}'
             renpy.show_screen("rnotify", message)
 
     def say_emotionally(relationship, message):
@@ -265,11 +267,11 @@ label start:
     $ h.observers.append(get_money)
     # Отношения
     # Дарина
-    $ dr = Relationship('Дариной', character=d)
+    $ dr = Relationship(_('Дариной'), character=d)
     $ rn = RelationshipNotifier()
     $ dr.observers.append(rn)
     # Кирилл
-    $ kr = Relationship('Кириллом', character=k)
+    $ kr = Relationship(_('Кириллом'), character=k)
     $ kr.observers.append(rn)
 
     $ is_use_timer = False
