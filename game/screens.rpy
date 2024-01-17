@@ -414,6 +414,9 @@ screen navigation():
             ## версии.
             textbutton _("Выход") action Quit(confirm=not main_menu)
 
+        textbutton "Русский" text_font "DejaVuSans.ttf" action Language(None)
+        textbutton "English" text_font "DejaVuSans.ttf" action Language("english")
+
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
